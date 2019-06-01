@@ -126,7 +126,7 @@ class Application(Frame):
         master.bind("4", lambda event, char="4", btn=self.four_bttn: self.add_chr(char, btn))
         master.bind("3", lambda event, char="3", btn=self.three_bttn: self.add_chr(char, btn))
         master.bind("2", lambda event, char="2", btn=self.two_bttn: self.add_chr(char, btn))
-        master.bind("1", lambda event, char="1", btn=self.one_bttn: self.add_chr(char, btn))
+        master.bind("1", lambda event, char="Dominic", btn=self.one_bttn: self.add_chr(char, btn))
         master.bind("0", lambda event, char="0", btn=self.zero_bttn: self.add_chr(char, btn))
         master.bind("*", lambda event, char="×", btn=self.mult_bttn: self.add_chr(char, btn))
         master.bind("/", lambda event, char="÷", btn=self.div_bttn: self.add_chr(char, btn))
@@ -215,5 +215,6 @@ class Application(Frame):
 
 root = Tk()
 root.geometry()
+root.title("Modified GUI Calculator")
 app = Application(root)
 root.mainloop()
