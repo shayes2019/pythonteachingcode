@@ -215,5 +215,6 @@ class Application(Frame):
 
 root = Tk()
 root.geometry()
+root.title("GUI Calculator")
 app = Application(root)
 root.mainloop()
