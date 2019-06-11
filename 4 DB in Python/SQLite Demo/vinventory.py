@@ -7,7 +7,10 @@ import sqlite3
 #importing Error this way let's us refer to it by this name instead of sqlite3.Error
 from sqlite3 import Error 
 import datetime
-database_file_path = "myinventory.db"
+#if you code is not connecting to the DB, uncomment the next three lines and read the comments. Also, you may need \ instead of / before the DB file name in windows
+#import os
+#path_root = os.path.dirname(os.path.abspath(__file__)) #grab the file system path to the current script file
+#database_file_path = str(path_root)+"/myinventory.db" #construct the path to the database file (only necessary if the current working directory is not the same as the folder where this Python file is located.)
 
 def create_connection(db_file):
     """ create a database connection to the SQLite database
