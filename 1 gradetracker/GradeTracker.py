@@ -72,10 +72,10 @@ def main():
     else:
         print('Valid option not selected.') #need to cause it to reprompt
 
-login = input('User: ')
+login = input('User:Stacey ')
 
 if login in admins:
-    password = input('Password: ')
+    password = input('Password:Hayes ')
     if admins[login] == password:
         print('Welcome,',login)
         #now run the code
